@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "user.profile.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'user.profile.image.path'"
+  },
+  {
+    "name": "category.cover.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'category.cover.image.path'"
+  },
+  {
+    "name": "product.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'product.image.path'"
+  },
+  {
+    "name": "role.id.admin",
+    "type": "java.lang.String",
+    "description": "A description for 'role.id.admin'"
+  },
+  {
+    "name": "role.id.normal",
+    "type": "java.lang.String",
+    "description": "A description for 'role.id.normal'"
+  }
+]}
