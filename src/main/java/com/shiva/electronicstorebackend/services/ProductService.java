@@ -1,10 +1,7 @@
-package com.shashwat.electronicstorebackend.services;
+
+package com.shiva.electronicstorebackend.services;
 
 import java.io.IOException;
-
-import com.shashwat.electronicstorebackend.dtos.ProductDto;
-import com.shashwat.electronicstorebackend.entities.Category;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
 
 public interface ProductService {
 

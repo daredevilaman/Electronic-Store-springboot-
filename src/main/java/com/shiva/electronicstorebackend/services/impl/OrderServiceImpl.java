@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.services.impl;
+package com.shiva.electronicstorebackend.services.impl;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,21 +14,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.shashwat.electronicstorebackend.dtos.OrderDto;
-import com.shashwat.electronicstorebackend.entities.Cart;
-import com.shashwat.electronicstorebackend.entities.CartItem;
-import com.shashwat.electronicstorebackend.entities.Order;
-import com.shashwat.electronicstorebackend.entities.OrderItem;
-import com.shashwat.electronicstorebackend.entities.User;
-import com.shashwat.electronicstorebackend.exceptions.BadApiRequestException;
-import com.shashwat.electronicstorebackend.exceptions.ResourceNotFoundException;
-import com.shashwat.electronicstorebackend.repositories.CartRepository;
-import com.shashwat.electronicstorebackend.repositories.OrderRepository;
-import com.shashwat.electronicstorebackend.repositories.ProductRepository;
-import com.shashwat.electronicstorebackend.repositories.UserRepository;
-import com.shashwat.electronicstorebackend.services.OrderService;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
 
 @Service
 public class OrderServiceImpl implements OrderService{

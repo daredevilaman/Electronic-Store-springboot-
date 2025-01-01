@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.services;
+package com.shiva.electronicstorebackend.services;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,6 +12,9 @@ public interface ImageService {
 	
 	String uploadImage(MultipartFile file, String path, String id, String entityName) throws IOException;
 	
-	InputStream getImageResource(String path, String name) throws FileNotFoundException;
+	static InputStream getImageResource(String path, String name) throws FileNotFoundException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getImageResource'");
+    }
 
 }

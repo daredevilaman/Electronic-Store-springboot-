@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.entities;
+package com.shiva.electronicstorebackend.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

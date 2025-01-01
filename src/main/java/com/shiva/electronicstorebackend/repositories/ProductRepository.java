@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.repositories;
+package com.shiva.electronicstorebackend.repositories;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.shashwat.electronicstorebackend.entities.Category;
-import com.shashwat.electronicstorebackend.entities.Product;
+import com.shiva.electronicstorebackend.entities.Category;
+import com.shiva.electronicstorebackend.entities.Product;
 
 public interface ProductRepository extends JpaRepository<Product, String>{
 

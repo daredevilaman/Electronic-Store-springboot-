@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.dtos;
+package com.shiva.electronicstorebackend.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

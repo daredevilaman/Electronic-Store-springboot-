@@ -1,11 +1,8 @@
-package com.shashwat.electronicstorebackend.services;
+
+package com.shiva.electronicstorebackend.services;
 
 import java.io.IOException;
 import java.util.List;
-
-import com.shashwat.electronicstorebackend.dtos.UserCreationUpdationDto;
-import com.shashwat.electronicstorebackend.dtos.UserDto;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
 
 public interface UserService {
 

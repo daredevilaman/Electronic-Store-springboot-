@@ -1,7 +1,4 @@
-package com.shashwat.electronicstorebackend.services;
-
-import com.shashwat.electronicstorebackend.dtos.OrderDto;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
+package com.shiva.electronicstorebackend.services;
 
 public interface OrderService {
 

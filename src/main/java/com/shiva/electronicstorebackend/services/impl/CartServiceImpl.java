@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.services.impl;
+package com.shiva.electronicstorebackend.services.impl;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -7,6 +7,7 @@ import java.util.NoSuchElementException;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
@@ -14,16 +15,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.shashwat.electronicstorebackend.dtos.CartDto;
-import com.shashwat.electronicstorebackend.entities.Cart;
-import com.shashwat.electronicstorebackend.entities.CartItem;
-import com.shashwat.electronicstorebackend.entities.Product;
-import com.shashwat.electronicstorebackend.entities.User;
-import com.shashwat.electronicstorebackend.exceptions.ResourceNotFoundException;
-import com.shashwat.electronicstorebackend.repositories.CartRepository;
-import com.shashwat.electronicstorebackend.repositories.ProductRepository;
-import com.shashwat.electronicstorebackend.repositories.UserRepository;
-import com.shashwat.electronicstorebackend.services.CartService;
+import com.shiva.electronicstorebackend.dtos.CartDto;
+import com.shiva.electronicstorebackend.entities.Cart;
+import com.shiva.electronicstorebackend.entities.CartItem;
+import com.shiva.electronicstorebackend.entities.Product;
+import com.shiva.electronicstorebackend.entities.User;
+import com.shiva.electronicstorebackend.repositories.CartRepository;
+import com.shiva.electronicstorebackend.repositories.ProductRepository;
+import com.shiva.electronicstorebackend.repositories.UserRepository;
+import com.shiva.electronicstorebackend.services.CartService;
 
 
 
@@ -42,8 +42,8 @@ public class CartServiceImpl implements CartService{
 	@Override
 	public CartDto addItemToCart(String userId, String productId) {
 		// TODO Auto-generated method stub
-		User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User doesn't exists"));
-		Product product = productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("No such product exist"));
+		User user = userRepository.findById(userId).orElseThrow();
+		Product product = productRepository.findById(productId).orElseThrow();
 		
 		// getting the cart associated with user or if the cart not exists then creating a cart for the user
 		Cart cart  = null;
@@ -91,8 +91,8 @@ public class CartServiceImpl implements CartService{
 	@Override
 	public void removeItemFromCart(String userId, String productId) {
 		// TODO Auto-generated method stub
-		User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User doesn't exists"));
-		Product product = productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("No such product exist"));
+		User user = userRepository.findById(userId).orElseThrow();
+		Product product = productRepository.findById(productId).orElseThrow();
 		Cart cart = cartRepository.findByUser(user).orElseThrow(() -> new ResourceNotFoundException("No cart exists! Try creating a cart before removing from cart"));
 		
 		// if qty > 1 then remove 1 product of that type from cart else remove product
@@ -125,7 +125,7 @@ public class CartServiceImpl implements CartService{
 	@Override
 	public void clearCart(String userId) {
 		// TODO Auto-generated method stub
-		User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User doesn't exists"));
+		User user = userRepository.findById(userId).orElseThrow();
 		Cart cart = cartRepository.findByUser(user).orElseThrow(() -> new ResourceNotFoundException("No cart exists! Try creating a cart before clearing cart"));
 		cart.getCartItems().clear();
 		cartRepository.save(cart);
@@ -134,7 +134,7 @@ public class CartServiceImpl implements CartService{
 	@Override
 	public CartDto getCart(String userId) {
 		// TODO Auto-generated method stub
-		User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User doesn't exists"));
+		User user = userRepository.findById(userId).orElseThrow((Supplier<? extends X>) () -> new ResourceNotFoundException("User doesn't exists"));
 		Cart cart = cartRepository.findByUser(user).orElseThrow(() -> new ResourceNotFoundException("No cart exists! Try creating a cart before clearing cart"));
 		
 		return mapper.map(cart, CartDto.class);

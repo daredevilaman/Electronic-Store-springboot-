@@ -1,9 +1,6 @@
-package com.shashwat.electronicstorebackend.services;
+package com.shiva.electronicstorebackend.services;
 
 import java.io.IOException;
-
-import com.shashwat.electronicstorebackend.dtos.CategoryDto;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
 
 public interface CategoryService {
 

@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.utilities;
+package com.shiva.electronicstorebackend.utilities;
 
 import java.util.List;
 import java.util.stream.Collectors;

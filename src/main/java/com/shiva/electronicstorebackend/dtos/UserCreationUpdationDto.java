@@ -1,9 +1,9 @@
-package com.shashwat.electronicstorebackend.dtos;
+package com.shiva.electronicstorebackend.dtos;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import com.shashwat.electronicstorebackend.utilities.ValidImage;
+import com.shiva.electronicstorebackend.utilities.ValidImage;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.repositories;
+package com.shiva.electronicstorebackend.repositories;
 
 import java.util.Optional;
 

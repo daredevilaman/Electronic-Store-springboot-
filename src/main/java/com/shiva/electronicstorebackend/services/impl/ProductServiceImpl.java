@@ -1,4 +1,5 @@
-package com.shashwat.electronicstorebackend.services.impl;
+
+package com.shiva.electronicstorebackend.services.impl;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,15 +16,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
-import com.shashwat.electronicstorebackend.dtos.ProductDto;
-import com.shashwat.electronicstorebackend.entities.Category;
-import com.shashwat.electronicstorebackend.entities.Product;
-import com.shashwat.electronicstorebackend.exceptions.ResourceNotFoundException;
-import com.shashwat.electronicstorebackend.repositories.CategoryRepository;
-import com.shashwat.electronicstorebackend.repositories.ProductRepository;
-import com.shashwat.electronicstorebackend.services.ProductService;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
 
 @Service
 public class ProductServiceImpl implements ProductService{

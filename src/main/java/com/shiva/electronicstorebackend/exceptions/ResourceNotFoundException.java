@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.exceptions;
+package com.shiva.electronicstorebackend.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException{
 

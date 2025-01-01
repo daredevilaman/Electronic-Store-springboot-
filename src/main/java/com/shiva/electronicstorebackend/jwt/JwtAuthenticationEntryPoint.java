@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.jwt;
+package com.shiva.electronicstorebackend.jwt;
 
 import java.io.IOException;
 import org.springframework.security.core.AuthenticationException;

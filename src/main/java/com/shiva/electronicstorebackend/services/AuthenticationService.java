@@ -1,7 +1,4 @@
-package com.shashwat.electronicstorebackend.services;
-
-import com.shashwat.electronicstorebackend.dtos.AuthenticationRequestDto;
-import com.shashwat.electronicstorebackend.dtos.AuthenticationResponseDto;
+package com.shiva.electronicstorebackend.services;
 
 public interface AuthenticationService {
 

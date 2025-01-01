@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.services.impl;
+package com.shiva.electronicstorebackend.services.impl;
 
 import java.io.File;
 import java.io.FileInputStream;

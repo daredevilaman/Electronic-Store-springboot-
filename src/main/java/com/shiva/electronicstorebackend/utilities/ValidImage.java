@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.utilities;
+package com.shiva.electronicstorebackend.utilities;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

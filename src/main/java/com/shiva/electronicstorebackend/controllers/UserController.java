@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.controllers;
+package com.shiva.electronicstorebackend.controllers;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,12 +24,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartRequest;
 
-import com.shashwat.electronicstorebackend.dtos.UserCreationUpdationDto;
-import com.shashwat.electronicstorebackend.dtos.UserDto;
-import com.shashwat.electronicstorebackend.services.ImageService;
-import com.shashwat.electronicstorebackend.services.UserService;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
-import com.shashwat.electronicstorebackend.utilities.ResponseMessage;
+import com.shiva.electronicstorebackend.dtos.UserCreationUpdationDto;
+import com.shiva.electronicstorebackend.dtos.UserDto;
+import com.shiva.electronicstorebackend.services.ImageService;
+import com.shiva.electronicstorebackend.services.UserService;
+import com.shiva.electronicstorebackend.utilities.PageableResponse;
+import com.shiva.electronicstorebackend.utilities.ResponseMessage;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

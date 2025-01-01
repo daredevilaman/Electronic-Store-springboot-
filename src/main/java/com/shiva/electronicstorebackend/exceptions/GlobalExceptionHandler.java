@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.exceptions;
+package com.shiva.electronicstorebackend.exceptions;
 
 import java.nio.file.NoSuchFileException;
 import java.util.HashMap;

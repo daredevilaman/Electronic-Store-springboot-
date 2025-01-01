@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.utilities;
+package com.shiva.electronicstorebackend.utilities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

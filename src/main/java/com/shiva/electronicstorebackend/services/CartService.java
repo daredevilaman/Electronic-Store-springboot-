@@ -1,4 +1,5 @@
-package com.shashwat.electronicstorebackend.services;
+
+package com.shiva.electronicstorebackend.services;
 
 import com.shashwat.electronicstorebackend.dtos.CartDto;
 
@@ -8,12 +9,12 @@ public interface CartService {
 	// condition 1 : if cart for user is not available -> create the cart and then add item to cart
 	// condition 2 : else add the items to cart
 	
-	CartDto addItemToCart(String userId, String productId);
+	com.shiva.electronicstorebackend.dtos.CartDto addItemToCart(String userId, String productId);
 	
 	void removeItemFromCart(String userId, String productId);
 	
 	void clearCart(String userId);
 	
-	CartDto getCart(String userId);
+	com.shiva.electronicstorebackend.dtos.CartDto getCart(String userId);
 	
 }

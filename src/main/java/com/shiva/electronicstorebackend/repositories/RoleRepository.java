@@ -1,8 +1,8 @@
-package com.shashwat.electronicstorebackend.repositories;
+package com.shiva.electronicstorebackend.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.shashwat.electronicstorebackend.entities.Role;
+import com.shiva.electronicstorebackend.entities.Role;
 
 public interface RoleRepository extends JpaRepository<Role, String>{
 

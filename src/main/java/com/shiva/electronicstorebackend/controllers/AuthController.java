@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.controllers;
+package com.shiva.electronicstorebackend.controllers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shashwat.electronicstorebackend.dtos.AuthenticationRequestDto;
-import com.shashwat.electronicstorebackend.dtos.AuthenticationResponseDto;
-import com.shashwat.electronicstorebackend.services.AuthenticationService;
+import com.shiva.electronicstorebackend.dtos.AuthenticationRequestDto;
+import com.shiva.electronicstorebackend.dtos.AuthenticationResponseDto;
+import com.shiva.electronicstorebackend.services.AuthenticationService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirements;

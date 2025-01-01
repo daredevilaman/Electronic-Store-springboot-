@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.controllers;
+package com.shiva.electronicstorebackend.controllers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shashwat.electronicstorebackend.dtos.OrderDto;
-import com.shashwat.electronicstorebackend.services.OrderService;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
-import com.shashwat.electronicstorebackend.utilities.ResponseMessage;
+import com.shiva.electronicstorebackend.dtos.OrderDto;
+import com.shiva.electronicstorebackend.services.OrderService;
+import com.shiva.electronicstorebackend.utilities.PageableResponse;
+import com.shiva.electronicstorebackend.utilities.ResponseMessage;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

@@ -1,4 +1,4 @@
-package com.shivi.electronicstorebackend.dtos;
+package com.shiva.electronicstorebackend.dtos;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

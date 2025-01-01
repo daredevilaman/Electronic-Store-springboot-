@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.repositories;
+package com.shiva.electronicstorebackend.repositories;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

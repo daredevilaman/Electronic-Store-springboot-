@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.entities;
+package com.shiva.electronicstorebackend.entities;
 
 import java.util.HashSet;
 import java.util.Set;

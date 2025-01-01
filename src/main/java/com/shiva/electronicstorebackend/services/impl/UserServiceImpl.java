@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.services.impl;
+package com.shiva.electronicstorebackend.services.impl;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,17 +15,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import com.shashwat.electronicstorebackend.dtos.RoleDto;
-import com.shashwat.electronicstorebackend.dtos.UserCreationUpdationDto;
-import com.shashwat.electronicstorebackend.dtos.UserDto;
-import com.shashwat.electronicstorebackend.entities.Role;
-import com.shashwat.electronicstorebackend.entities.User;
-import com.shashwat.electronicstorebackend.exceptions.ResourceNotFoundException;
-import com.shashwat.electronicstorebackend.repositories.UserRepository;
-import com.shashwat.electronicstorebackend.services.RoleService;
-import com.shashwat.electronicstorebackend.services.UserService;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
 
 @Service
 public class UserServiceImpl implements UserService {

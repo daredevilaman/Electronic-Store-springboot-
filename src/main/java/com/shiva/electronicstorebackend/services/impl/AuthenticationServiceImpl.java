@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.services.impl;
+package com.shiva.electronicstorebackend.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -8,11 +8,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
-import com.shashwat.electronicstorebackend.dtos.AuthenticationRequestDto;
-import com.shashwat.electronicstorebackend.dtos.AuthenticationResponseDto;
-import com.shashwat.electronicstorebackend.exceptions.BadApiRequestException;
-import com.shashwat.electronicstorebackend.jwt.JwtHelper;
-import com.shashwat.electronicstorebackend.services.AuthenticationService;
+import com.shiva.electronicstorebackend.dtos.AuthenticationRequestDto;
+import com.shiva.electronicstorebackend.dtos.AuthenticationResponseDto;
+import com.shiva.electronicstorebackend.exceptions.BadApiRequestException;
+import com.shiva.electronicstorebackend.jwt.JwtHelper;
+import com.shiva.electronicstorebackend.services.AuthenticationService;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {

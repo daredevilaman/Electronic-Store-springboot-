@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.controllers;
+package com.shiva.electronicstorebackend.controllers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shashwat.electronicstorebackend.dtos.CartDto;
-import com.shashwat.electronicstorebackend.services.CartService;
-import com.shashwat.electronicstorebackend.utilities.ResponseMessage;
+import com.shiva.electronicstorebackend.dtos.CartDto;
+import com.shiva.electronicstorebackend.services.CartService;
+import com.shiva.electronicstorebackend.utilities.ResponseMessage;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

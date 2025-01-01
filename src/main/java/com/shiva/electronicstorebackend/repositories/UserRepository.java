@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.repositories;
+package com.shiva.electronicstorebackend.repositories;
 
 import java.util.Optional;
 
@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.shashwat.electronicstorebackend.entities.User;
+import com.shiva.electronicstorebackend.entities.User;
 
 public interface UserRepository extends JpaRepository<User, String> {
 	Optional<User> findByEmail(String email);

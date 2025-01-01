@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.services.impl;
+package com.shiva.electronicstorebackend.services.impl;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,12 +14,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.shashwat.electronicstorebackend.dtos.CategoryDto;
-import com.shashwat.electronicstorebackend.entities.Category;
-import com.shashwat.electronicstorebackend.exceptions.ResourceNotFoundException;
-import com.shashwat.electronicstorebackend.repositories.CategoryRepository;
-import com.shashwat.electronicstorebackend.services.CategoryService;
-import com.shashwat.electronicstorebackend.utilities.PageableResponse;
+import com.shiva.electronicstorebackend.dtos.CategoryDto;
+import com.shiva.electronicstorebackend.entities.Category;
+import com.shiva.electronicstorebackend.repositories.CategoryRepository;
+import com.shiva.electronicstorebackend.services.CategoryService;
 
 @Service
 public class CategoryServiceImpl implements CategoryService{
@@ -49,6 +47,8 @@ public class CategoryServiceImpl implements CategoryService{
 		return mapper.map(updatedCategory, CategoryDto.class);
 	}
 
+
+	
 	@Override
 	public void deleteCategory(String id) throws IOException {
 		// TODO Auto-generated method stub

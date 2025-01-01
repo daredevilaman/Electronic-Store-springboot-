@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.utilities;
+package com.shiva.electronicstorebackend.utilities;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

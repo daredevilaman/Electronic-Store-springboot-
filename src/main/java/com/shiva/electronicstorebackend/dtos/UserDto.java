@@ -1,8 +1,7 @@
-package com.shashwat.electronicstorebackend.dtos;
+package com.shiva.electronicstorebackend.dtos;
 
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import lombok.AllArgsConstructor;

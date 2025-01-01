@@ -1,4 +1,4 @@
-package com.shashwat.electronicstorebackend.config;
+package com.shiva.electronicstorebackend.config;
 
 import java.util.List;
 
